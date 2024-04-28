@@ -15,6 +15,7 @@
 
 
 import React from 'react'
+import Link from 'next/link';
 
 const Hero = () => {
   return (
@@ -24,13 +25,13 @@ const Hero = () => {
                 Empower Small Businesses.
             </h3>
             <p className='text-xs font-light text-green-100 mb-12'>Join us in supporting small businesses around the globe. Together, we can make a difference.</p>
-            <div className='flex justify-start items-center space-x-4 '>
-                <div className="flex justify-center items-center w-6 h-6 rounded-full bg-[#E96D2F] hover:scale-110 "><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-4 h-4 text-white text-lg">
+            <Link href="/posts" className='flex w-32 pl-2 rounded-sm h-10 justify-start items-center space-x-4 border border-green-50 text-xs font-light hover:text-[#245449] hover:bg-green-100 hover:border-[#245449]'>
+                <div className="flex justify-center items-center w-6 h-6 rounded-full bg-[#E96D2F] hover:scale-110 mr-2 "><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-4 h-4 text-white text-xl">
   <path stroke-linecap="round" stroke-linejoin="round" d="M17.25 8.25 21 12m0 0-3.75 3.75M21 12H3" />
 </svg>
  </div>
-                <p className='mr-6 text-green-100 text-xs font-light'>Get Involved</p>
-            </div>
+ Get Involved
+            </Link>
 
         </div>
         <div className='w-full h-full '>
